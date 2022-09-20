@@ -8,13 +8,19 @@
     <title>Trains</title>
 
     <!-- CSS -->
-    <link rel="stylesheet" href="{{ asset(css/app.css) }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <!-- JS -->
-    <script defer href="{{ asset(js/app.js) }}"></script>
+    <script defer href="{{ asset('js/app.js') }}"></script>
 </head>
 
 <body>
+    <header class="bg-primary">
+        <h1 class="text-white p-5"> The (Faked) Trains </h1>
+    </header>
 
+    <main>
+        @yield('main-content')
+    </main>
 </body>
 
 </html>
