@@ -22,8 +22,8 @@ class CreateTrainsTable extends Migration
             $table->timeTz('Orario di arrivo');
             $table->tinyInteger('Codice treno');
             $table->smallInteger('Numero carrozze');
-            $table->boolean('In orario' , 0);
-            $table->boolean('Cancellato' , 1);
+            $table->boolean('In orario')->default(0);
+            $table->boolean('Cancellato')->default(1);
             $table->timestamps();
         });
     }
