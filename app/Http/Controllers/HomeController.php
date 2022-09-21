@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Train;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -9,7 +10,7 @@ class HomeController extends Controller
     public function index()
     {
     
-    $trains = [];
+    $trains = Train::all();
     return view('home', compact('trains'));
 
     }
